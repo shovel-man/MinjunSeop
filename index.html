@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글로벌 민준섭 귀환 센터</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .header {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(126, 210, 92);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+            padding-left: 1px;
+        }
+        .header_doble {
+            display: flex;
+            justify-self: start;
+            flex-direction: column;
+        }
+        .top_header {
+            height: 36px;
+            width: 100%;
+            background-color: rgba(86, 152, 61, 0.8);
+        }
+        #bigtitle{
+            font-size: 25px;
+            font-weight: 800;
+            color: rgb(240, 240, 240) ;
+            margin-left: 10px;
+            text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        }
+        #smalltitle{
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(20, 20, 20) ;
+            margin-top: 5px;
+            
+        }
+        .simg {
+            width: 100%;
+            height: 400px;
+            background-image: url(./Sky.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sdiv{
+            display: flex;
+            flex-direction: column;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button {
+            background-color: rgb(122, 212, 38);
+             width: 300px;
+              height: 50px;
+               margin-top: 25px;
+               border: none;
+               border-radius: 10px;
+            
+        }
+        .oimg {
+            width: 300px;
+            height: 300px;
+            background-image: url(./good.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 30px;
+            border-radius: 40%;
+            position: relative;
+            border: #827979 solid 1px ;
+        }
+        .contents_items {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        .contents {
+            width: 250px;
+            height: 170px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            border: #000 solid 0.1px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contents_font {
+            color: rgb(18, 5, 5); font-weight: 800; margin-bottom: 10px;
+            font-size: 15px;
+        }
+        @media all and (max-width:767px)  {
+            .oimg {
+                display: none;
+            }
+            #oimg_span {
+                display: none;
+            }
+            .sdiv {
+                margin-left: 25px;
+            }
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="top_header"></div>
+    <div class="header">
+        <img src="./Minjunseop.png.png" alt="" style="width: 86px;height:86px; margin-bottom: 30px; margin-left: 20px;">
+        <div class="header_doble">
+            <span id="bigtitle">글로벌 민준섭 귀환 및 계시</span>
+            <span id="smalltitle">민준섭 귀환소원 및 계시요청</span>
+        </div>
+        <span></span>
+    </div>
+    <div class="simg" >
+        <div class="sdiv">
+             <span style="color: rgb(18, 5, 5); font-weight: 800; margin-bottom: 10px;">민준섭의 계시를 바라는 것으로 새로운 국민이 됩니다.</span>
+             <span style="color: rgb(255, 255, 255); font-weight: 800; font-size: 50px; margin-left: 20px;text-shadow:1px 1px 1px #000;">133,525,551</span>
+        
+             <span style="color: rgb(112, 44, 44); font-weight: 800; font-size: 20px;margin-top: 20px;">민준섭님의 지시를 받은 자 혹은 이행한 자의 수</span>
+            <button>민준섭의계시 요청하기</button>
+
+        </div>
+        <div class="oimg">
+            <span id="oimg_span" style="position: absolute;font-size: 16px; font-weight: 600; color: rgb(203, 202, 144); text-shadow:0.5px 0.5px 0.5px #000000; top: 320px; left: 50px;">민준섭을 믿고 달라진 신준섭씨</span>
+        </div>
+        
+    </div>
+    <div class="contents_items">
+        <div class="contents">
+            <i class="fa-solid fa-fire fa-2xl" style="margin-bottom: 20px;"></i>
+            <span class="contents_font">민준섭님의 계시 받기</span>
+            <button style="width: 100px;">요청하기</button>
+        </div>
+        <div class="contents">
+            <i class="fa-solid fa-check fa-2xl" style="margin-bottom: 20px;"></i>
+            <span class="contents_font">민준섭님의 계시 인증하기</span>
+            <button style="width: 100px;">요청하기</button>
+        </div>
+        <div class="contents">
+            <i class="fa-solid fa-circle-dollar-to-slot fa-2xl"></i>
+            <button style="width: 100px;">후원하기</button>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/74192de85c.js" crossorigin="anonymous"></script>
+</html>

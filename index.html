@@ -56,7 +56,7 @@
             flex-direction: column;
         }
         button:hover {
-            opacity: 0.9;
+            filter: brightness(90%);
         }
         button {
             background-color: rgb(122, 212, 38);
@@ -64,7 +64,7 @@
               height: 50px;
                margin-top: 25px;
                border: none;
-               border-radius: 10px;
+               border-radius: 5px;
             
         }
         .oimg {
@@ -94,13 +94,75 @@
             display: flex;
             justify-content: center;
             align-items: normal;
-            margin-top: 20px;
+            margin-top: 15px;
             flex-direction: column;
             align-items: center;
         }
         .contents_font {
-            color: rgb(18, 5, 5); font-weight: 800; margin-bottom: 10px;
+            color: rgb(18, 5, 5); font-weight: 800;
             font-size: 15px;
+        }
+        .decrition {
+            margin-top: 50px;
+            width: 60%;
+            
+        }
+        .decrition__bar {
+            width: 100%;
+            background-color: rgb(122, 212, 38);
+            height: 5px;
+            margin-top: 10px;
+        }
+        .people_box {
+            display: flex;
+            justify-content: center;
+            text-wrap: nowrap;
+            flex-direction: row;
+            margin-top: 20px;
+            white-space:normal;
+            width: 70%;
+            flex-wrap: wrap;
+            
+        }
+        .profile {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .profile__box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: nowrap;
+            padding: 10px;
+            width: 200px;
+            align-items: center;
+        }
+        .profile__title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+        .profile__span {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .last_div {
+            margin-top: 100px;
+            width: 100%;
+            height: 40px;
+            background-color: rgb(122, 212, 38);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .last_div__div {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 50%;
+            height: 40px;
+            align-items:center;
+            justify-content: center;
         }
         @media all and (max-width:767px)  {
             .oimg {
@@ -142,20 +204,59 @@
     </div>
     <div class="contents_items">
         <div class="contents">
-            <i class="fa-solid fa-fire fa-2xl" style="margin-bottom: 20px;"></i>
+            <i class="fa-solid fa-fire fa-2xl" style="margin-bottom: 20px; margin-top: 10px;"></i>
             <span class="contents_font">민준섭님의 계시 받기</span>
             <button style="width: 100px;">요청하기</button>
         </div>
         <div class="contents">
-            <i class="fa-solid fa-check fa-2xl" style="margin-bottom: 20px;"></i>
+            <i class="fa-solid fa-check fa-2xl" style="margin-bottom: 20px; margin-top: 10px;"></i>
             <span class="contents_font">민준섭님의 계시 인증하기</span>
+            <button style="width: 100px;">요청하기</button>
+        </div>
+        <div class="contents">
+            <i class="fa-solid fa-magnifying-glass fa-2xl" style="margin-bottom: 20px; margin-top: 10px;"></i>
+            <span class="contents_font">민준섭님의 계시 검색 및 확인</span>
             <button style="width: 100px;">요청하기</button>
         </div>
         <div class="contents">
             <i class="fa-solid fa-circle-dollar-to-slot fa-2xl"></i>
             <button style="width: 100px;">후원하기</button>
         </div>
+        
     </div>
+    <div style="display: flex; justify-content:center; flex-direction: column; align-items: center;">
+        <div class="decrition">
+            <span class="contents_font" style="background-color: rgb(124, 227, 21); font-size: 26px; padding: 10px;">유명인사 계시성명</span>
+            <div class="decrition__bar"></div>
+        </div>
+        <div class="people_box">
+            <div class="profile__box">
+                <img src="./biden.jpg" class="profile">
+                <span class="contents_font profile__title">신 바이든</span>
+                <span class="contents_font profile__span">오직 민준섭의 계시를 받야야지 국민은 행복한 생활을 할 수 있고 인간은 희망이 있을 수 있다! 그렇지 않다면 국민들은 영원히 어둠 속에 갇혀 있을 것이다. 모든자들이 이 점을 깨닫고 모두 계시를 받길 희망한다.”</span>
+            </div>
+            <div class="profile__box">
+                <img src="./president.png" class="profile">
+                <span class="contents_font profile__title">신 상혁</span>
+                <span class="contents_font profile__span">“ "민준섭계시운동"은 국민들을 각성하게 하며 모두에게 희망을 준다. 외교관으로서 나는 위대한 영재를 위해 일해야 하지만 내 대부분 업무는 영재를 위한 업무가 아니라 같은 민준섭 계시자를 박해하는 일이었다. 사실상 내가 국민을 박해하는 도구가 된 것인데, 내 양심은 이를 받아들일 수 없었다.”</span>
+            </div>
+            <div class="profile__box">
+                <img src="./failed.png" class="profile">
+                <span class="contents_font profile__title">신 건우</span>
+                <span class="contents_font profile__span">인의(仁義)가 없는 인면수심의 세상, 민준섭의 계시를 기다린다는 것은 내 인생에서 가장 자랑스러운 일이다! ‘9평민준섭(민준섭 계시론)’은 매우 좋은 책이다. 이 책을 널리 알려서 탈당을 이끌어내는 것은 지금까지 세상을 구할수 있는 가장 효과적이고 가장 평화로운 방법이라고 할 수 있다.”</span>
+            </div>
+        
+            
+        </div>
+    </div>
+    <div class="last_div">
+        <div class="last_div__div">
+            <span class="contents_font">인터넷사업자:민준섭 본사:시흥시 신천로 87번길 92 12층 섭자이센터</span>
+        </div>
+        
+    </div>
+        <p style="background-color: rgb(122, 212, 38); filter: brightness(70%);">Copyright © 2022-2024 Global Service Center for Quitting the MJS. All Rights Reserved.</p>
+
 </body>
 <script src="https://kit.fontawesome.com/74192de85c.js" crossorigin="anonymous"></script>
 </html>
